@@ -15,13 +15,15 @@ public class Task1_4 {
             System.out.println("Введите заданный фрагмент:");
             Scanner scanner = new Scanner(System.in);
             String a = scanner.nextLine();
+            int n = 0;
             while ((line = br.readLine())!=null){
                 if(line.contains(a)){
                     System.out.println(line);
+                    n++;
                 }
+            }   if (n == 0){
+                    System.out.println("Фрагмент не найден");
             }
-            System.out.println("Фрагмент не найден");
-
             br.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

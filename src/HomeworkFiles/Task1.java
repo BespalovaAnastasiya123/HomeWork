@@ -7,7 +7,7 @@ public class Task1 {
     public static void main(String[] args) {
         BufferedReader reader;
         try {
-            reader = new BufferedReader(new FileReader("src/Data/test.txt"));
+            reader = new BufferedReader(new FileReader("src/Data/test1.txt"));
             String line = reader.readLine();
 
             while(line!=null){
